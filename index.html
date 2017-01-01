@@ -16,7 +16,7 @@ function isSelected($pn, $link) {
 
 
 	<link rel="stylesheet" type="text/css" href="public/css/styles.css">
-  <link rel="stylesheet" type="text/css" href="<?= BASE_URL ?>/public/css/bubble.css">
+  <link rel="stylesheet" type="text/css" href="/public/css/bubble.css">
   <script type="text/javascript">
 		var baseURL = '<?= BASE_URL ?>';
 	</script>
@@ -37,14 +37,14 @@ function isSelected($pn, $link) {
 				<div id="search">
 				<ul id="primary-nav" style= "font-size: 15px;">
 
-					<li><a href="<?= BASE_URL ?>/paintings">Paintings</a></li>
-					<li><a href="<?= BASE_URL ?>/photographs">Photographs</a></li>
+					<li><a href="/paintings">Paintings</a></li>
+					<li><a href="/photographs">Photographs</a></li>
 					<!--<li><a href="<?= BASE_URL ?>/working">Clothing & Accessories</a></li>-->
 					<!--<li><a href="<?= BASE_URL ?>/working">Home & Decor</a></li>-->
 					<li><a href="<?= BASE_URL ?>/blogs">Blog</a></li>
 
 					<?php if(isset($_SESSION['user']) && $_SESSION['user'] != '') { ?>
-					<li><a href="<?= BASE_URL ?>/profile/<?= $_SESSION['user'] ?>">Profile</a></li>
+					<li><a href="profile/<?= $_SESSION['user'] ?>">Profile</a></li>
 					<?php } ?>
 
 
@@ -101,16 +101,16 @@ body, html {
 }
 
 .bgimg-0 {
-  background-image: url("<?= BASE_URL ?>/public/img/background1.jpeg");
+  background-image: url("public/img/background1.jpeg");
   min-height: 500px;
 }
 .bgimg-1 {
-  background-image: url("<?= BASE_URL ?>/public/img/photographer.jpeg");
+  background-image: url("public/img/photographer.jpeg");
   min-height: 500px;
 }
 
 .bgimg-2 {
-  background-image: url("<?= BASE_URL ?>/public/img/desk.jpeg");
+  background-image: url("public/img/desk.jpeg");
   min-height: 400px;
 }
 
